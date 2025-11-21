@@ -11,6 +11,12 @@ from PIL import Image
 import numpy as np
 
 st.set_page_config(page_title="RideFair Prototype", page_icon="🚕", layout="wide")
+from PIL import Image
+import streamlit as st
+
+# Load and display the local image
+image = Image.open("image.jpg")
+st.image(image, width=350, caption="Smart, Transparent Rides")
 
 # ------- Mock Data Structures -------
 def get_initial_users():
@@ -246,3 +252,4 @@ def main_app():
 
 if __name__ == '__main__':
     main_app()
+
